@@ -1,0 +1,17 @@
+<style>
+    p.margem {
+         margin: 35px;
+        }
+</style>
+<h1>Estatísticas dos clientes</h1>
+<h2>Quantidade de clientes: {{ clientes }}</h2>
+<h2>cliente com maior custo de orçamento:</h2>
+<p class="margem">
+    O cliente com maior orsamento foi {{orcamento_maior_custo.cliente.nome}},
+    {{ orcamento_maior_custo.data_hora }},
+    Com o cuto de R$: {{orcamento_maior_custo.custo_total}}.
+</p>
+<h2>cliente com menor custo de orçamento</h2>
+<p class="margem">O cliente com maior orsamento foi {{orcamento_menor_custo.cliente.nome}},
+    {{ orcamento_menor_custo.data_hora }}, 
+    Com o cuto de R$: {{orcamento_menor_custo.custo_total}}.
